@@ -1,0 +1,602 @@
+@charset "ISO-8859-1";
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+  font-family: sans-serif;
+}
+
+.menuLigue {
+	font-size: 18px;
+}
+
+/****************************************************/
+/*styles pour le conteneur                             */
+/****************************************************/
+.conteneur{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	font-size: 0px;
+}
+
+/****************************************************/
+/*styles pour le header                             */
+/****************************************************/
+header {
+  height: 200px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+/****************************************************/
+/*styles pour la zone centrale de la page           */
+/****************************************************/
+main {
+	margin: 0px;
+	padding: 0px;
+	min-height: 600px;
+	background-color: #f0f0f0;
+ 	font-size: 10px;
+ 	margin-top: 200px;
+}
+
+
+
+
+/**********************************************************************/
+/*styles pour la zone gauche de la zone centrale de la page           */
+/**********************************************************************/
+.gauche {
+	display: inline-block;	
+	
+	width: 20%;
+	vertical-align: top;
+	font-size: 15px;
+}
+
+/**********************************************************************/
+/*styles pour la zone droite de la zone centrale de la page           */
+/**********************************************************************/
+.droite {
+	display: inline-block;
+	width: 80%;	
+	font-size: 15px;
+	vertical-align: top;
+}
+
+
+/****************************************************/
+/*styles pour le footer                             */
+/****************************************************/
+footer {
+	background-color: #0a8632;
+	height: 120px;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+footer p{
+	padding: 15px;
+	padding-top: 25px;
+}
+
+/****************************************************/
+/*styles pour le logo de M2L                        */
+/****************************************************/
+.logo {
+	display: inline-block;
+	font-size: 50px;
+	color: white;
+	margin-left: 10px;
+}
+
+
+/****************************************************/
+/*styles pour le bandeau                            */
+/****************************************************/
+.bandeau {
+  height: 80%;
+  background-repeat:no-repeat;
+  background-image: url("../images/Welcome.png");
+  background-size: cover;
+}
+
+
+/****************************************************/
+/*styles pour le menu principal                     */
+/****************************************************/
+nav.menuPrincipal{
+	text-align: right;
+	background-color: #0a8632;
+	font-size: 0px;
+}
+
+nav.menuPrincipal ul {
+	display:  inline;
+	list-style: none;
+	padding: 0px;
+ 	margin: 0px;
+	font-family: Helvetica; 
+}
+
+nav.menuPrincipal ul li {
+	display: table-cell;
+	text-align: center;
+	width: 140px;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+}
+
+nav.menuPrincipal ul li a {
+  text-decoration: none;
+  color: white; 
+}
+
+nav.menuPrincipal ul li a:hover {
+  color: grey;
+}
+
+nav.menuPrincipal ul li.actif {
+  	background-color: ivory;
+  	color: black;
+  	padding: 10px;
+}
+
+
+/****************************************************/
+/*styles pour le page d'accueil                     */
+/****************************************************/ 
+.texteAccueil {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+	font-size: 17px;
+}
+
+.texteAccueil h1{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-align: center;
+}
+
+.texteAccueil p{
+	padding-top: 20px;
+	text-align: justify;
+}
+
+.images {
+	text-align: center;
+	padding-top: 30px;
+}
+.images img{
+	height: 150px;
+	margin: 10px;
+	padding-bottom: 100px;
+}
+
+/****************************************************/
+/*styles pour la zone navigation gauche             */
+/****************************************************/ 
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+}
+
+.sidenav{
+	position: fixed;
+ 	top: 200px;
+ 	left: 0px;
+}
+
+.sidenav .titreListe{
+	color: black; 
+	padding: 30px;
+	font-weight: bold;
+ 	font-size: 22px; 
+}
+ 
+.sidenav ul{
+  list-style: none;
+  padding-left: 40px;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.sidenav li a {
+  text-decoration: none;
+  color: grey; 
+}
+
+.sidenav li a:hover {
+  color: blue;
+}
+
+/****************************************************/
+/*styles pour les rubriques de la zone droite       */
+/****************************************************/ 
+.articles{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 150px;		
+}
+
+.article .titre{
+	color: blue;
+	padding: 20px;
+}
+
+.article .corps{
+	background-color: #b2ebf2; 
+	text-align: justify;
+	padding: 15px;
+}
+
+ .article .corps .col1{
+	display: inline-block;
+	width: 28%;
+	vertical-align: middle;
+}
+
+.article .corps .col2{
+	display: inline-block;
+	width: 70%;
+	vertical-align: middle;
+}
+
+.article .corps .col2 img{
+	width: 100%;
+}
+
+/****************************************************/
+/*styles pour les tableaux de la zone droite        */
+/****************************************************/ 
+
+.article .corps .tab{
+	width: 100%;
+	font-size: 0.8em;
+	border: 1px solid blue;
+	text-align: center;
+}
+
+.article .corps .tab thead{
+	background-color: #0a8632;
+}
+
+.article .corps .tab .pair{
+	background-color: white;
+}
+
+
+.contentConnexion{
+	background-color: #f0f0f0;
+ 	text-align: center;
+ 	padding-top: 60px;
+}
+
+.connexion {
+	display: inline-block;
+	font-size: 15px;
+	width: 500px;
+	border: 1px solid black;
+}
+
+.connexion img {
+	width: 100%;
+    max-width: 96px;
+}
+
+.connexion .titre{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: #0a8632;
+	padding: 16px;
+}
+
+/*  ////////////////////// FACTURE ////////////////////////////  */
+
+.Facture{
+	width: 100%;
+    margin: 0px;
+}
+
+.fFacture .ligne
+{
+	font-size: 28px;
+	text-indent : 10%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+.fFacture .ligne h1
+{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-align: center;
+}
+
+.fFacture .ligne  input[type=submit]{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	padding: 14px;
+	width: 200px;
+}
+
+.fFacture .ligne input[type=submit]#Supprimer
+{
+   height: 100px;
+   width: 100px;
+   font-size: 0%;
+   background-image:url("../images/poubelle.jpg");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+.fFacture .ligne input[type=submit]#Voir
+{
+   height: 100px;
+   width: 100px;
+   font-size: 0%;
+   background-image:url("../images/eye.png");
+
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+.fFacture .ligne input[type=submit]#Valide
+{
+   height: 100px;
+   width: 100px;
+   font-size: 0%;
+   background-image:url("../images/check.png");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+.Facture input[type=image]
+{
+	height: 100px;
+	width: 100px;
+	background-repeat:no-repeat;
+	background-size: cover;
+	border: 1mm ridge black;
+}
+
+/*  ////////////////////// FACTURE ////////////////////////////  */
+
+/*  ////////////////////// PRODUCTEURS ////////////////////////////  */
+.fProducteur .ligne h1
+{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-align: center;
+}
+
+.fProducteur .ligne
+{
+	font-size: 18px;
+	text-indent : 10%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+
+/*  ////////////////////// PRODUCTEURS ////////////////////////////  */
+
+
+/* ///////////////////////ACHAT///////////////////////////////   */
+
+.fProduitProposer .ligne  input[type=submit]#Achat
+{
+	height: 100px;
+	width: 100px;
+	background-image:url("../images/achat.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	border: 2mm ridge black;
+}
+
+.fProduitProposer .ligne h1
+{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	text-align: center;
+}
+
+.fProduitProposer .ligne
+{
+	font-size: 18px;
+	/*text-indent : 40%;*/
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+/* ///////////////////////ACHAT///////////////////////////////   */
+
+/* ///////////////////////Panier///////////////////////////////   */
+.fPanier .ligne
+{
+	font-size: 20px;
+	text-indent : 0%;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 20px;
+}
+
+.fPanier .ligne h1
+{
+	display: block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.fPanier .ligne  input[type=submit]{
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	width: 200px;
+}
+
+.fPanier .ligne  input[type=text]
+{
+	display: inline-block;
+}
+
+.fPanier .ligne input[type=submit]#X
+{
+   height: 50px;
+   width: 50px;
+   font-size: 0%;
+   background-image:url("../images/poubelle.jpg");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+.fPanier .ligne input[type=submit]#SavePANIER
+{
+   height: 70px;
+   width: 70px;
+   font-size: 0%;
+   background-image:url("../images/save.png");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+.fPanier .ligne input[type=submit]#AjouterPANIER
+{
+   height: 70px;
+   width: 85px;
+   font-size: 0%;
+   background-image:url("../images/shop.png");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+.fPanier .ligne input[type=submit]#cherche
+{
+   height: 80px;
+   width: 80px;
+   font-size: 0%;
+   background-image:url("../images/loupe.png");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+/* ///////////////////////Panier///////////////////////////////   */
+
+.connexion .ligne{
+	padding: 14px;
+	text-align: center;
+}
+
+.connexion .ligne label{
+	display: inline-block;
+	width: 180px;
+	text-align: right;
+	padding-right: 10px;
+	font-weight: bold;
+	
+}
+
+.connexion .ligne input[type=radio]{
+	display: inline-block;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.connexion .ligne input{
+	display: inline-block;
+	width: 200px;
+}
+
+.connexion .ligne input[type=submit]{
+	display: inline-block;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.connexion .ligne label.message{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	color: red;
+}
+
+.connexion .ligne input[type=submit]#Sup
+{
+   height: 70px;
+   width: 70px;
+   font-size: 0%;
+   background-image:url("../images/poubelle.jpg");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+.connexion .ligne input[type=submit]#Modif
+{
+   height: 70px;
+   width: 70px;
+   font-size: 0%;
+   background-image:url("../images/save.png");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+.connexion .ligne input[type=submit]#Changer
+{
+   height: 70px;
+   width: 70px;
+   font-size: 0%;
+   background-image:url("../images/modif.png");
+   background-repeat:no-repeat;
+   background-size: cover;
+}
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+	
+}
+table th , td{
+	border: 1px solid black;
+	padding: 2px;
+	text-align: center;
+}
+table th{
+	background-color: gainsboro;
+	height: 30px;
+}
