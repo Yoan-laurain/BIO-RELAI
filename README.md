@@ -1,4 +1,4 @@
 # BIO-RELAI
 bio relais php
 
-Disponible à l'adresse : https://verozgames.github.io/BIO-RELAI/
+Ne peut pas être déployé à cause du php.
